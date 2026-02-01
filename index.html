@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Exceptional Empowerment Foundation</title>
+  <meta name="description" content="Empowering youth, families, and underserved communities through financial literacy, credit education, and community programs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Exceptional Empowerment Foundation" />
+  <meta property="og:description" content="Financial literacy & credit education for youth, families, and underserved communities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/EXCEPTIONAL.png" />
+
+  <!-- JSON-LD: Organization + potential events -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NonprofitOrganization",
+    "name": "The Exceptional Empowerment Foundation",
+    "url": "https://www.example.org",
+    "logo": "https://www.example.org/assets/img/EXCEPTIONAL.png",
+    "sameAs": [],
+    "foundingDate": "2026",
+    "slogan": "Exceptional Empowerment for Financial Futures",
+    "missionStatement": "Exceptional Empowerment Foundation is a nonprofit organization dedicated to empowering youth, families, and underserved communities through financial literacy education, credit education, and community-based programs that promote economic stability, informed decision-making, and long-term financial success."
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Exceptional Empowerment Home">
+        <img src="assets/img/EXCEPTIONAL.png" alt="The Exceptional Empowerment Foundation logo" />
+        <span class="brand-text">The Exceptional Empowerment Foundation</span>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="primaryNav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#partners">Partners</a>
+        <a href="#events">Events</a>
+        <a href="#donate" class="btn btn-donate">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero section">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Exceptional Empowerment Starts Here</h1>
+        <p>
+          Equipping youth, families, and underserved communities with the knowledge and tools to build lasting financial well‑being.
+        </p>
+        <div class="cta-row">
+          <a href="#donate" class="btn btn-primary">Donate</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container split">
+      <div>
+        <h2>About Us</h2>
+        <p class="lead">
+          Exceptional Empowerment Foundation is a nonprofit organization dedicated to empowering youth, families, and underserved communities through financial literacy education, credit education, and community-based programs that promote economic stability, informed decision-making, and long-term financial success.
+        </p>
+        <div class="pill-grid">
+          <span class="pill">Financial Literacy Workshops</span>
+          <span class="pill">Credit Education</span>
+          <span class="pill">Community Programs</span>
+          <span class="pill">Mentorship</span>
+          <span class="pill">Career Readiness</span>
+        </div>
+      </div>
+      <aside class="about-card">
+        <h3>Our Impact Goals</h3>
+        <ul>
+          <li>Increase financial capability across local families</li>
+          <li>Improve credit outcomes for young adults</li>
+          <li>Build community resilience through money management</li>
+          <li>Foster entrepreneurship and workforce readiness</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section id="partners" class="section section-alt">
+    <div class="container">
+      <h2>Our Partners</h2>
+      <p class="section-intro">
+        Collaboration powers our mission. We are grateful for the businesses, schools, and community organizations that stand with us.
+      </p>
+      <div class="partner-grid" id="partnerGrid" aria-live="polite">
+        <!-- Partner tiles injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="section">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <p class="section-intro">Join a workshop, credit clinic, or community event near you.</p>
+      <div id="eventsWrap" class="cards" aria-live="polite">
+        <!-- Event cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate -->
+  <section id="donate" class="section section-accent">
+    <div class="container split">
+      <div>
+        <h2>Donate</h2>
+        <p class="lead">
+          Your gift fuels financial education, credit empowerment, and community programs that create lasting change.
+        </p>
+
+        <div class="donate-cards">
+          <!-- PayPal -->
+          <div class="donate-card">
+            <h3>Donate with PayPal</h3>
+            <!-- Replace business value with your PayPal merchant ID or email -->
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="business" value="YOUR_PAYPAL_MERCHANT_ID_OR_EMAIL" />
+              <input type="hidden" name="no_recurring" value="0" />
+              <input type="hidden" name="item_name" value="The Exceptional Empowerment Foundation" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <button type="submit" class="btn btn-primary">Donate via PayPal</button>
+            </form>
+          </div>
+
+          <!-- Stripe -->
+          <div class="donate-card">
+            <h3>Donate with Stripe</h3>
+            <!-- Replace with a live Stripe payment link -->
+            <a class="btn btn-outline" href="https://buy.stripe.com/test_1234567890" target="_blank" rel="noopener">Open Stripe Checkout</a>
+            <p class="help">We also accept company matching gifts and sponsorships.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="donate-side">
+        <h3>Other Ways to Give</h3>
+        <ul>
+          <li>Mail-in check</li>
+          <li>Corporate sponsorships</li>
+          <li>In‑kind donations (workbooks, laptops, venue space)</li>
+          <li>Volunteer your skills</li>
+        </ul>
+        <a class="link" href="mailto:info@example.org">Email us: info@example.org</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>The Exceptional Empowerment Foundation</strong><br />
+        <span>Kennesaw, GA</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#partners">Partners</a>
+        <a href="#events">Events</a>
+        <a href="#donate">Donate</a>
+      </div>
+      <div class="copyright">© <span id="year"></span> Exceptional Empowerment. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
